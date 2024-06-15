@@ -7,11 +7,16 @@ import {
   RightNav,
   Footer,
 } from "../components";
+import { useEffect, useLayoutEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+  useLayoutEffect(() => {
+    router.replace("/feed");
+  }, []);
   return (
     <>
-
       {/* <div className="grid-container relative">
         <div className="p-5 flex items-center gap-5 story-card">
           <StoryCard />
