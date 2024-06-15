@@ -1,1 +1,0 @@
-# This is the backend codebase for Connectly
