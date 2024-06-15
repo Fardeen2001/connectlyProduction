@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/Image";
 import Link from "next/link";
 import { Pic, feed } from "../app/assets";
 import { MdOutlineExplore } from "react-icons/md";
@@ -8,6 +7,7 @@ import {
   IoNotificationsOutline,
 } from "react-icons/io5";
 import AvatarComponent from "./AvatarComponent";
+import Image from "next/image";
 
 const RightNav = () => {
   return (

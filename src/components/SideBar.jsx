@@ -1,12 +1,13 @@
 import React from "react";
 import { men_women } from "../app/assets";
-import Image from "next/Image";
+
 import Link from "next/link";
 import { Img } from "../app/assets";
 import { MdEdit, MdOutlineInterests } from "react-icons/md";
 import { GrGroup } from "react-icons/gr";
 import { LuPartyPopper } from "react-icons/lu";
 import { LiaUserFriendsSolid } from "react-icons/lia";
+import Image from "next/image";
 
 const SideBar = ({ views, edit }) => {
   return (
