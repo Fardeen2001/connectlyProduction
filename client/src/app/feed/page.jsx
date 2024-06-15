@@ -12,18 +12,22 @@ import {
 import { useDispatch } from "react-redux";
 import { useRouter, useSearchParams } from "next/navigation";
 import { getUserData } from "@/utils/GoogleAuthHandler";
-const SearchParamsComp = ({ setUserId }) => {
-  const searchParams = useSearchParams();
-  useEffect(() => {
-    const userId = searchParams.get("id");
 
-    if (userId) {
-      setUserId(userId);
-    }
-  }, []);
-  return <div className="hidden"></div>;
-};
 const page = () => {
+
+
+  const SearchParamsComp = ({ setUserId }) => {
+    const searchParams = useSearchParams();
+    useEffect(() => {
+      const userId = searchParams.get("id");
+  
+      if (userId) {
+        setUserId(userId);
+      }
+    }, []);
+    return <div className="hidden"></div>;
+  };
+
   const [userId, setUserId] = useState();
 
   const dispatch = useDispatch();

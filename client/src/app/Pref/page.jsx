@@ -4,18 +4,21 @@ import { useRouter, useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { RxCross1 } from "react-icons/rx";
 import { useDispatch } from "react-redux";
-const SearchParamsComp = ({ setUserId }) => {
-  const searchParams = useSearchParams();
-  useEffect(() => {
-    const userId = searchParams.get("id");
 
-    if (userId) {
-      setUserId(userId);
-    }
-  }, []);
-  return <div className="hidden"></div>;
-};
 const Page = () => {
+
+  const SearchParamsComp = ({ setUserId }) => {
+    const searchParams = useSearchParams();
+    useEffect(() => {
+      const userId = searchParams.get("id");
+  
+      if (userId) {
+        setUserId(userId);
+      }
+    }, []);
+    return <div className="hidden"></div>;
+  };
+
   const [userId, setUserId] = useState();
   const [showPopup, setShowPopup] = useState(false);
   const [selectedInterests, setSelectedInterests] = useState([]);
