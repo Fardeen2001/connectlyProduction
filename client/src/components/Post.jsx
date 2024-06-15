@@ -87,7 +87,7 @@ const Post = () => {
               <div className="my-3 flex flex-col gap-2">
                 <p className="text-[#656565]">{p.content}</p>
                 {p.image && (
-                  <Image src={p.image} width={100} height={100} alt="" />
+                  <Image src={p.asset} width={100} height={100} alt="" />
                 )}
               </div>
               <div className="flex justify-between items-center">
