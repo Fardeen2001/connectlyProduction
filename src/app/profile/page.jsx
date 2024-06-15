@@ -11,7 +11,7 @@ import Cookies from "js-cookie";
 import Loading from "@/components/Loading";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useToast } from "react-toastify";
+import { useToast } from "@/components/ui/use-toast";
 
 const Profile = () => {
   const [request, setRequest] = useState(false);
