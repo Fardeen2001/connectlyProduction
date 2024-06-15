@@ -17,6 +17,7 @@ const Profile = () => {
 
   async function fetchProfileData() {
     const token = Cookies.get("token");
+    console.log(token)
     const apiURL = process.env.NEXT_PUBLIC_API_URL;
     const response = await fetch(`${apiURL}/api/profile/me`, {
       method: "GET",
@@ -60,8 +61,9 @@ const Profile = () => {
           <div className="bg-white rounded-2xl h-[18rem]">
             <Image src={cover_profile} className="h-[8rem]" />
             <div className="flex items-center h-[8rem]">
+              {console.log(profileData)}
               <Image
-                src={profileData.profilePicture}
+                //src={profileData.profilePicture}
                 width={100}
                 height={50}
                 className="w-[10rem] h-[10rem] relative left-5 bottom-10 rounded-full"

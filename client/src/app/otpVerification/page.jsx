@@ -3,7 +3,9 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
+import axios from "axios"
 import { useSelector } from "react-redux";
+import Cookies from "js-cookie";
 
 const OtpVerification = () => {
   const [otp1, setOtp1] = useState();
@@ -30,15 +32,17 @@ const OtpVerification = () => {
             },
           }
         );
-        alert(response.data.message);
-
+        //alert(response.data.message);
+        console.log(response)
         // Redirect to OTP page
-        if (response.data.message) {
-          router.replace("/Pref");
-        } // Change this to your OTP page route
+        
+          Cookies.set('token', response.data.token)
+          router.replace("/profile");
+        
       } catch (error) {
+        console.log(error)
         console.error("Error response:", error.response);
-        alert(`Error: ${error.response.data.message}`);
+        //alert(`Error: ${error.response.data.message}`);
       }
     } else {
       alert("Please confirm your password");

@@ -36,15 +36,16 @@ const SignupForm = ({ setIsAnimated, isAnimated }) => {
             },
           }
         );
-        alert(response.data.message);
+        //alert(response.data.message);
         console.log(response.data.data);
+        
         dispatch(
           authReducer({
             id: response?.data?.data?.id,
             name: response?.data?.data?.name,
             email: response?.data?.data?.email,
             profilePicture: "",
-            // token: response?.data?.data?.token,
+            //token: response?.data?.data?.token,
           })
         );
         // Redirect to OTP page

@@ -122,7 +122,23 @@ exports.verifyOtp = async (req, res, next) => {
 
     await user.save();
 
-    res.status(200).json({ message: "Email verified successfully" });
+    const payload = {
+      user: {
+        id: user.id,
+        name: user.name,
+        email: user.email,
+      },
+    };
+    jwt.sign(
+      payload,
+      process.env.JWT_SECRET,
+      { expiresIn: "30d" },
+      (err, token) => {
+        if (err) throw err;
+        res.header("x-auth-token", token);
+        res.json({ token, id: user.id, name: user.name, email: user.email });
+      }
+    );
   } catch (err) {
     console.error(err.message);
     res.status(500).send("Server error");
