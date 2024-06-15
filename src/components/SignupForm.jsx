@@ -38,14 +38,20 @@ const SignupForm = ({ setIsAnimated, isAnimated }) => {
         );
         //alert(response.data.message);
         console.log(response.data.data);
-        
+
+        if (response.token) {
+          Cookies.set("token", response.token, {
+            expires: 29,
+          });
+          localStorage.setItem("token", response.token);
+        }
         dispatch(
           authReducer({
             id: response?.data?.data?.id,
             name: response?.data?.data?.name,
             email: response?.data?.data?.email,
             profilePicture: "",
-            //token: response?.data?.data?.token,
+            // token: response?.data?.data?.token,
           })
         );
         // Redirect to OTP page
@@ -68,7 +74,8 @@ const SignupForm = ({ setIsAnimated, isAnimated }) => {
               <h1 className="text-5xl font-bold text-[#F45044]">
                 Create account
               </h1>
-              <Button className="my-6  uppercase rounded-lg bg-[#F45044] hover:bg-[#ab180d] text-white font-semibold text-center flex items-center justify-center gap-2 w-full "
+              <Button
+                className="my-6  uppercase rounded-lg bg-[#F45044] hover:bg-[#ab180d] text-white font-semibold text-center flex items-center justify-center gap-2 w-full "
                 onClick={() => googleSubmitHandler(toast)}
               >
                 <FaGoogle className="text-2xl" /> Sign In With Google
@@ -82,25 +89,25 @@ const SignupForm = ({ setIsAnimated, isAnimated }) => {
                     id="name"
                     name="name"
                     type="text"
-                    className="peer h-10 w-full border-b-2 border-[#F45044] text-[#F45044] placeholder-transparent focus:outline-none focus:border-primary-600"
+                    className="peer h-10 w-full border-b-2 border-[#F45044] text-[#F45044] placeholder-transparent focus:outline-none focus:border-primary rounded-lg bg-transparent"
                     placeholder="Full Name"
                     required
                     value={nameValue}
                     onChange={(e) => setNameValue(e.target.value)}
                   />
-                   <label
+                  <label
                     htmlFor="name"
-                    className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-[#ab180d] peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-[#ab180d] peer-focus:text-sm"
+                    className="absolute left-0 -top-3.5 text-gray-800  text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-[#ab180d] peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-[#ab180d] peer-focus:text-sm"
                   >
                     Full Name
                   </label>
                 </div>
                 <div className="mt-10 relative">
-                <input
+                  <input
                     id="email"
                     name="email"
                     type="email"
-                    className="peer h-10 w-full border-b-2 border-[#F45044] text-[#F45044] placeholder-transparent focus:outline-none focus:border-primary-600"
+                    className="peer h-10 w-full border-b-2 border-[#F45044] text-[#F45044] placeholder-transparent focus:outline-none focus:border-primary rounded-lg bg-transparent"
                     placeholder="example@gmail.com"
                     required
                     value={emailValue}
@@ -108,43 +115,43 @@ const SignupForm = ({ setIsAnimated, isAnimated }) => {
                   />
                   <label
                     htmlFor="email"
-                    className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-[#ab180d] peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-[#ab180d] peer-focus:text-sm"
+                    className="absolute left-0 -top-3.5 text-gray-800  text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-[#ab180d] peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-[#ab180d] peer-focus:text-sm"
                   >
                     Email address
                   </label>
                 </div>
                 <div className="mt-10 relative">
-                <input
+                  <input
                     id="password"
                     type="password"
                     name="password"
-                    className="peer h-10 w-full border-b-2 border-[#F45044] text-[#F45044] placeholder-transparent focus:outline-none focus:border-primary-600"
+                    className="peer h-10 w-full border-b-2 border-[#F45044] text-[#F45044] placeholder-transparent focus:outline-none focus:border-primary rounded-lg bg-transparent"
                     placeholder="Password"
                     required
                     value={passwordValue}
                     onChange={(e) => setPasswordValue(e.target.value)}
                   />
-                   <label
+                  <label
                     htmlFor="password"
-                    className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-[#ab180d] peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-[#ab180d] peer-focus:text-sm"
+                    className="absolute left-0 -top-3.5 text-gray-800  text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-[#ab180d] peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-[#ab180d] peer-focus:text-sm"
                   >
                     Password
                   </label>
                 </div>
                 <div className="mt-10 relative">
-                <input
+                  <input
                     id="re-password"
                     type="password"
                     name="re-enter password"
-                    className="peer h-10 w-full border-b-2 border-[#F45044] text-[#F45044] placeholder-transparent focus:outline-none focus:border-primary-600"
+                    className="peer h-10 w-full border-b-2 border-[#F45044] text-[#F45044] placeholder-transparent focus:outline-none focus:border-primary rounded-lg bg-transparent"
                     placeholder="Re-Enter Password"
                     required
                     value={confirmPasswordValue}
                     onChange={(e) => setConfirmPasswordValue(e.target.value)}
                   />
-                   <label
+                  <label
                     htmlFor="re-password"
-                    className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-[#ab180d] peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-[#ab180d] peer-focus:text-sm"
+                    className="absolute left-0 -top-3.5 text-gray-800  text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-[#ab180d] peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-[#ab180d] peer-focus:text-sm"
                   >
                     Re-Enter Password
                   </label>
@@ -158,7 +165,7 @@ const SignupForm = ({ setIsAnimated, isAnimated }) => {
                 </Button>
               </form>
               <div className="flex md:hidden gap-2 items-center justify-center my-4">
-                <h1 className="text-primary-500">Already have an Account?</h1>
+                <h1 className="text-black ">Already have an Account?</h1>
                 <Button
                   className=" transition-transform ease-in"
                   onClick={(e) => {

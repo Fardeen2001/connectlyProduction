@@ -60,8 +60,11 @@ const LoginForm = ({ setIsAnimated, isAnimated }) => {
         <div className="p-8 flex-1">
           <div className="mx-auto overflow-hidden">
             <div className="p-8">
-              <h1 className="text-5xl font-bold text-[#F45044]">Welcome back!</h1>
-              <Button className="my-6 p-4 uppercase rounded-lg bg-[#F45044] hover:bg-[#ab180d] text-white font-semibold text-center flex items-center justify-center gap-2 w-full focus:outline-none focus:ring focus:ring-offset-2 focus:ring-[#F45044] focus:ring-opacity-80 cursor-pointer"
+              <h1 className="text-5xl font-bold text-[#F45044]">
+                Welcome back!
+              </h1>
+              <Button
+                className="my-6 p-4 uppercase rounded-lg bg-[#F45044] hover:bg-[#ab180d] text-white font-semibold text-center flex items-center justify-center gap-2 w-full focus:outline-none focus:ring focus:ring-offset-2 focus:ring-[#F45044] focus:ring-opacity-80 cursor-pointer"
                 onClick={() => googleSubmitHandler(toast)}
               >
                 <FaGoogle className="text-2xl" /> Sign In With Google
@@ -75,7 +78,7 @@ const LoginForm = ({ setIsAnimated, isAnimated }) => {
                     id="signin-email"
                     name="email"
                     type="email"
-                    className="peer h-10 w-full border-b-2 border-[#F45044] text-[#F45044] placeholder-transparent focus:outline-none focus:border-[#F45044]"
+                    className="peer h-10 w-full border-b-2 border-[#F45044] text-[#F45044] placeholder-transparent focus:outline-none focus:border-[#F45044] rounded-lg bg-transparent"
                     placeholder="example@gmail.com"
                     required
                     value={emailValue}
@@ -93,7 +96,7 @@ const LoginForm = ({ setIsAnimated, isAnimated }) => {
                     id="signin-password"
                     type="password"
                     name="password"
-                    className="peer h-10 w-full border-b-2 border-[#F45044] text-[#F45044] placeholder-transparent focus:outline-none focus:border-[#F45044]"
+                    className="peer h-10 w-full border-b-2 border-[#F45044] text-[#F45044] placeholder-transparent focus:outline-none focus:border-[#F45044] rounded-lg bg-transparent"
                     placeholder="Password"
                     required
                     value={passwordValue}

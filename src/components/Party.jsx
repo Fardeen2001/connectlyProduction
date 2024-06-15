@@ -119,9 +119,7 @@ const Party = () => {
                   <div className="flex flex-col gap-3">
                     <div className="flex flex-col gap-1">
                       <p className="text-sm">{event.venue}</p>
-                      <span className="text-xs text-[#656565]">
-                        {event.day}
-                      </span>
+                      <span className="text-xs text-black ">{event.day}</span>
                     </div>
 
                     <p className="text-sm">{event.location}</p>

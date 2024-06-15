@@ -87,7 +87,7 @@ const Page = () => {
                   <input
                     type="text"
                     placeholder="Search for vibe, friend or interest..."
-                    className="px-3 py-1 w-[18rem] bg-transparent focus:outline-none placeholder:text-gray-600"
+                    className="px-3 py-1 w-[18rem] bg-transparent focus:outline-none placeholder:text-gray-800 "
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                   />
@@ -103,14 +103,14 @@ const Page = () => {
               </button> */}
 
               <div className="flex items-center relative">
-                <div className="text-gray-600 font-medium mr-4">
+                <div className="text-gray-800 font-medium mr-4">
                   Looking for
                 </div>
                 <button
                   onClick={handleToggle}
                   className="bg-pink-100 py-2 px-4 rounded-md flex items-center gap-2"
                 >
-                  <span className="text-gray-600">Vibe Together</span>
+                  <span className="text-gray-800">Vibe Together</span>
                   <svg
                     className={`w-4 h-4 transition-transform duration-300 ${
                       isOpen ? "rotate-180" : ""
@@ -133,7 +133,7 @@ const Page = () => {
                       <li className="px-4 py-2 hover:bg-gray-100">
                         <Link
                           href={"/explore"}
-                          className="text-gray-600 hover:text-gray-900"
+                          className="text-gray-800  hover:text-gray-900"
                         >
                           👫 Friends
                         </Link>
@@ -141,7 +141,7 @@ const Page = () => {
                       <li className="px-4 py-2 hover:bg-gray-100">
                         <Link
                           href={"/explore"}
-                          className="text-gray-600 hover:text-gray-900"
+                          className="text-gray-800  hover:text-gray-900"
                         >
                           🎶 Vibe Together
                         </Link>
@@ -149,7 +149,7 @@ const Page = () => {
                       <li className="px-4 py-2 hover:bg-gray-100">
                         <Link
                           href={"/explore"}
-                          className="text-gray-600 hover:text-gray-900"
+                          className="text-gray-800  hover:text-gray-900"
                         >
                           ❤️ Date
                         </Link>
@@ -157,7 +157,7 @@ const Page = () => {
                       <li className="px-4 py-2 hover:bg-gray-100">
                         <Link
                           href={"/explore"}
-                          className="text-gray-600 hover:text-gray-900"
+                          className="text-gray-800  hover:text-gray-900"
                         >
                           💼 Work
                         </Link>

@@ -28,7 +28,7 @@ const StoryCard = () => {
           <GoPlus className="text-white" size={30} />
         </div>
 
-        <p className="absolute left-1/2 top-[88%] -translate-x-[50%] w-full text-center text-xs text-[#656565]">
+        <p className="absolute left-1/2 top-[88%] -translate-x-[50%] w-full text-center text-xs text-black ">
           Create Story
         </p>
       </div>

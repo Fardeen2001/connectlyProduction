@@ -7,15 +7,15 @@
 // //     <>
 // //       {showModal ? (
 // //         <>
-// //           <div className="justify-center h-[90vh] items-center flex overflow-x-hidden mt-5 overflow-y-hidden fixed inset-0 z-50 outline-none focus:outline-none text-black">
+// //           <div className="justify-center h-[90vh] items-center flex overflow-x-hidden mt-5 overflow-y-hidden fixed inset-0 z-50 outline-none focus:outline-none text-black ">
 // //             <div className="relative  w-auto my-6 mx-auto max-w-3xl">
 // //               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-[60vw] h-[80vh] bg-white outline-none focus:outline-none">
 // //                 <div className="flex items-center justify-between w-full h-[10vh] p-5">
-// //                   <h1 className="text-xl font-bold text-primary-500">
+// //                   <h1 className="text-xl font-bold text-black -500">
 // //                     Edit Profile
 // //                   </h1>
 // //                   <button
-// //                     className="p-2 bg-primary-500 rounded-lg text-black font-bold"
+// //                     className="p-2 bg-primary-500 rounded-lg text-black  font-bold"
 // //                     onClick={() => setShowModal(false)}
 // //                   >
 // //                     Close
@@ -43,32 +43,32 @@
 // //                                 />
 // //                                 <button
 // //                                   type="button"
-// //                                   className="py-3.5 px-7 text-base font-medium text-primary-100 focus:outline-none bg-primary-800 rounded-lg border border-primary-200 hover:bg-primary-900 focus:z-10 focus:ring-4 focus:ring-primary-200 "
+// //                                   className="py-3.5 px-7 text-base font-medium text-black -100 focus:outline-none bg-primary-800 rounded-lg border border-primary-200 hover:bg-primary-900 focus:z-10 focus:ring-4 focus:ring-primary-200 "
 // //                                 >
 // //                                   Change picture
 // //                                 </button>
 // //                                 <button
 // //                                   type="button"
-// //                                   className="py-3.5 px-7 text-base font-medium text-primary-900 focus:outline-none bg-white rounded-lg border border-primary-200 hover:bg-primary-100 hover:text-primary-800 focus:z-10 focus:ring-4 focus:ring-primary-200 "
+// //                                   className="py-3.5 px-7 text-base font-medium text-black -900 focus:outline-none bg-white rounded-lg border border-primary-200 hover:bg-primary-100 hover:text-black -800 focus:z-10 focus:ring-4 focus:ring-primary-200 "
 // //                                 >
 // //                                   Delete picture
 // //                                 </button>
 // //                               </div>
 // //                             </div>
 
-// //                             <div className="items-center mt-8 sm:mt-14 text-black">
+// //                             <div className="items-center mt-8 sm:mt-14 text-black ">
 // //                               <div className="flex flex-col items-center w-full mb-2 space-x-0 space-y-2 sm:flex-row sm:space-x-4 sm:space-y-0 sm:mb-6">
 // //                                 <div className="w-full">
 // //                                   <label
 // //                                     for="first_name"
-// //                                     className="block mb-2 text-sm font-medium text-primary-900 "
+// //                                     className="block mb-2 text-sm font-medium text-black -900 "
 // //                                   >
 // //                                     Your first name
 // //                                   </label>
 // //                                   <input
 // //                                     type="text"
 // //                                     id="first_name"
-// //                                     className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+// //                                     className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 // //                                     placeholder="Your first name"
 // //                                     value="Fardeen"
 // //                                     required
@@ -78,14 +78,14 @@
 // //                                 <div className="w-full">
 // //                                   <label
 // //                                     for="last_name"
-// //                                     className="block mb-2 text-sm font-medium text-primary-900 "
+// //                                     className="block mb-2 text-sm font-medium text-black -900 "
 // //                                   >
 // //                                     Your last name
 // //                                   </label>
 // //                                   <input
 // //                                     type="text"
 // //                                     id="last_name"
-// //                                     className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+// //                                     className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 // //                                     placeholder="Your last name"
 // //                                     value="Ahamed"
 // //                                     required
@@ -96,14 +96,14 @@
 // //                               <div className="mb-2 sm:mb-6">
 // //                                 <label
 // //                                   for="email"
-// //                                   className="block mb-2 text-sm font-medium text-primary-900 "
+// //                                   className="block mb-2 text-sm font-medium text-black -900 "
 // //                                 >
 // //                                   Your email
 // //                                 </label>
 // //                                 <input
 // //                                   type="email"
 // //                                   id="email"
-// //                                   className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+// //                                   className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 // //                                   placeholder="your.email@mail.com"
 // //                                   required
 // //                                 />
@@ -112,14 +112,14 @@
 // //                               <div className="mb-2 sm:mb-6">
 // //                                 <label
 // //                                   for="profession"
-// //                                   className="block mb-2 text-sm font-medium text-primary-900 "
+// //                                   className="block mb-2 text-sm font-medium text-black -900 "
 // //                                 >
 // //                                   User name
 // //                                 </label>
 // //                                 <input
 // //                                   type="text"
 // //                                   id="userName"
-// //                                   className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+// //                                   className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 // //                                   placeholder="fardeen_19"
 // //                                   required
 // //                                 />
@@ -128,14 +128,14 @@
 // //                               <div className="mb-6">
 // //                                 <label
 // //                                   for="message"
-// //                                   className="block mb-2 text-sm font-medium text-primary-900 "
+// //                                   className="block mb-2 text-sm font-medium text-black -900 "
 // //                                 >
 // //                                   Bio
 // //                                 </label>
 // //                                 <textarea
 // //                                   id="message"
 // //                                   rows="4"
-// //                                   className="block p-2.5 w-full text-sm text-primary-900 bg-primary-50 rounded-lg border border-primary-300 focus:ring-primary-500 focus:border-primary-500 "
+// //                                   className="block p-2.5 w-full text-sm text-black -900 bg-primary-50 rounded-lg border border-primary-300 focus:ring-primary-500 focus:border-primary-500 "
 // //                                   placeholder="Write your bio here..."
 // //                                 ></textarea>
 // //                               </div>
@@ -178,7 +178,7 @@
 //     <div className="h-full">
 //       {" "}
 //       <div className="flex items-center justify-between w-full h-[10vh] p-5">
-//         <h1 className="text-xl font-bold text-primary-500">Profile Details</h1>
+//         <h1 className="text-xl font-bold text-black -500">Profile Details</h1>
 //       </div>
 //       <div className="w-full">
 //         <form onSubmit={submitHandler}>
@@ -198,20 +198,20 @@
 //                       <input type="file" name="profilePic" id="profilePic" />
 //                       <button
 //                         type="button"
-//                         className="py-2 px-7 text-base font-medium text-primary-100 focus:outline-none bg-primary-800 rounded-lg border border-primary-200 hover:bg-primary-900 focus:z-10 focus:ring-4 focus:ring-primary-200 "
+//                         className="py-2 px-7 text-base font-medium text-black -100 focus:outline-none bg-primary-800 rounded-lg border border-primary-200 hover:bg-primary-900 focus:z-10 focus:ring-4 focus:ring-primary-200 "
 //                       >
 //                         Change picture
 //                       </button>
 //                       <button
 //                         type="button"
-//                         className="py-2 px-7 text-base font-medium text-primary-900 focus:outline-none bg-white rounded-lg border border-primary-200 hover:bg-primary-100 hover:text-primary-800 focus:z-10 focus:ring-4 focus:ring-primary-200 "
+//                         className="py-2 px-7 text-base font-medium text-black -900 focus:outline-none bg-white rounded-lg border border-primary-200 hover:bg-primary-100 hover:text-black -800 focus:z-10 focus:ring-4 focus:ring-primary-200 "
 //                       >
 //                         Delete picture
 //                       </button>
 //                     </div>
 //                   </div>
 
-//                   <div className="items-center mt-10 sm:mt-5 text-black ">
+//                   <div className="items-center mt-10 sm:mt-5 text-black  ">
 //                     <div className="mb-4">
 //                       <h2 className="text-lg font-semibold">
 //                         Personal Details
@@ -222,14 +222,14 @@
 //                       <div className="w-full">
 //                         <label
 //                           for="full_name"
-//                           className="block mb-2 text-sm font-medium text-primary-900 "
+//                           className="block mb-2 text-sm font-medium text-black -900 "
 //                         >
 //                           Full Name
 //                         </label>
 //                         <input
 //                           type="text"
 //                           id="full_name"
-//                           className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+//                           className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 //                           placeholder="Full name"
 //                           value="Fardeen"
 //                           required
@@ -239,14 +239,14 @@
 //                       <div className="w-full">
 //                         <label
 //                           for="user_name"
-//                           className="block mb-2 text-sm font-medium text-primary-900 "
+//                           className="block mb-2 text-sm font-medium text-black -900 "
 //                         >
 //                           User Name
 //                         </label>
 //                         <input
 //                           type="text"
 //                           id="last_name"
-//                           className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+//                           className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 //                           placeholder="User name"
 //                           value="fardeen_19"
 //                           required
@@ -257,14 +257,14 @@
 //                       <div className="w-full">
 //                         <label
 //                           for="occupation"
-//                           className="block mb-2 text-sm font-medium text-primary-900 "
+//                           className="block mb-2 text-sm font-medium text-black -900 "
 //                         >
 //                           Occupation
 //                         </label>
 //                         <input
 //                           type="text"
 //                           id="occupation"
-//                           className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+//                           className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 //                           placeholder="Your occupation"
 //                           value="Full Stack Developer"
 //                           required
@@ -274,14 +274,14 @@
 //                       <div className="w-full">
 //                         <label
 //                           for="Organization/Company/College"
-//                           className="block mb-2 text-sm font-medium text-primary-900 "
+//                           className="block mb-2 text-sm font-medium text-black -900 "
 //                         >
 //                           Organization/Company/College
 //                         </label>
 //                         <input
 //                           type="text"
 //                           id="Organization/Company/College"
-//                           className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+//                           className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 //                           placeholder="Your Organization/Company/College name"
 //                           value="grrow.ai"
 //                           required
@@ -292,14 +292,14 @@
 //                       <div className="w-full">
 //                         <label
 //                           for="email"
-//                           className="block mb-2 text-sm font-medium text-primary-900 "
+//                           className="block mb-2 text-sm font-medium text-black -900 "
 //                         >
 //                           Email
 //                         </label>
 //                         <input
 //                           type="email"
 //                           id="email"
-//                           className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+//                           className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 //                           placeholder="Your email"
 //                           value="fardeenahamed2001@gmail.com"
 //                           required
@@ -309,14 +309,14 @@
 //                       <div className="w-full">
 //                         <label
 //                           for="country"
-//                           className="block mb-2 text-sm font-medium text-primary-900 "
+//                           className="block mb-2 text-sm font-medium text-black -900 "
 //                         >
 //                           Country
 //                         </label>
 //                         <input
 //                           type="text"
 //                           id="country"
-//                           className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+//                           className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 //                           placeholder="Your Country"
 //                           value="India"
 //                           required
@@ -327,14 +327,14 @@
 //                       <div className="w-full">
 //                         <label
 //                           for="address"
-//                           className="block mb-2 text-sm font-medium text-primary-900 "
+//                           className="block mb-2 text-sm font-medium text-black -900 "
 //                         >
 //                           Address
 //                         </label>
 //                         <input
 //                           type="text"
 //                           id="address"
-//                           className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+//                           className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 //                           placeholder="Your address"
 //                           value="Pavagada, karnataka"
 //                           required
@@ -344,14 +344,14 @@
 //                       <div className="w-full">
 //                         <label
 //                           for="zip"
-//                           className="block mb-2 text-sm font-medium text-primary-900 "
+//                           className="block mb-2 text-sm font-medium text-black -900 "
 //                         >
 //                           Zip Code
 //                         </label>
 //                         <input
 //                           type="number"
 //                           id="zip"
-//                           className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+//                           className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 //                           placeholder="Your Country"
 //                           value="561202"
 //                           maxLength={6}
@@ -363,14 +363,14 @@
 //                       <div className="w-full">
 //                         <label
 //                           for="phone"
-//                           className="block mb-2 text-sm font-medium text-primary-900 "
+//                           className="block mb-2 text-sm font-medium text-black -900 "
 //                         >
 // //                           Phone Number
 //                         </label>
 //                         <input
 //                           type="tel"
 //                           id="phone"
-//                           className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+//                           className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 //                           placeholder="Phone Number"
 //                           value="9113010971"
 //                           maxLength={10}
@@ -444,15 +444,15 @@
 //     <>
 //       {showModal ? (
 //         <>
-//           <div className="justify-center h-[90vh] items-center flex overflow-x-hidden mt-5 overflow-y-hidden fixed inset-0 z-50 outline-none focus:outline-none text-black">
+//           <div className="justify-center h-[90vh] items-center flex overflow-x-hidden mt-5 overflow-y-hidden fixed inset-0 z-50 outline-none focus:outline-none text-black ">
 //             <div className="relative w-auto my-6 mx-auto max-w-3xl">
 //               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-[60vw] h-[80vh] bg-white outline-none focus:outline-none">
 //                 <div className="flex items-center justify-between w-full h-[10vh] p-5">
-//                   <h1 className="text-xl font-bold text-primary-500">
+//                   <h1 className="text-xl font-bold text-black -500">
 //                     Edit Profile
 //                   </h1>
 //                   <button
-//                     className="p-2 bg-primary-500 rounded-lg text-black font-bold"
+//                     className="p-2 bg-primary-500 rounded-lg text-black  font-bold"
 //                     onClick={() => setShowModal(false)}
 //                   >
 //                     Close
@@ -490,7 +490,7 @@
 //                                 />
 //                                 <button
 //                                   type="button"
-//                                   className="py-3.5 px-7 text-base font-medium text-primary-100 focus:outline-none bg-primary-800 rounded-lg border border-primary-200 hover:bg-primary-900 focus:z-10 focus:ring-4 focus:ring-primary-200"
+//                                   className="py-3.5 px-7 text-base font-medium text-black -100 focus:outline-none bg-primary-800 rounded-lg border border-primary-200 hover:bg-primary-900 focus:z-10 focus:ring-4 focus:ring-primary-200"
 //                                   onClick={() =>
 //                                     document.getElementById("profilePic").click()
 //                                   }
@@ -499,7 +499,7 @@
 //                                 </button>
 //                                 <button
 //                                   type="button"
-//                                   className="py-3.5 px-7 text-base font-medium text-primary-900 focus:outline-none bg-white rounded-lg border border-primary-200 hover:bg-primary-100 hover:text-primary-800 focus:z-10 focus:ring-4 focus:ring-primary-200"
+//                                   className="py-3.5 px-7 text-base font-medium text-black -900 focus:outline-none bg-white rounded-lg border border-primary-200 hover:bg-primary-100 hover:text-black -800 focus:z-10 focus:ring-4 focus:ring-primary-200"
 //                                   onClick={handleImageDelete}
 //                                 >
 //                                   Delete picture
@@ -507,19 +507,19 @@
 //                               </div>
 //                             </div>
 
-//                             <div className="items-center mt-8 sm:mt-14 text-black">
+//                             <div className="items-center mt-8 sm:mt-14 text-black ">
 //                               <div className="flex flex-col items-center w-full mb-2 space-x-0 space-y-2 sm:flex-row sm:space-x-4 sm:space-y-0 sm:mb-6">
 //                                 <div className="w-full">
 //                                   <label
 //                                     htmlFor="first_name"
-//                                     className="block mb-2 text-sm font-medium text-primary-900"
+//                                     className="block mb-2 text-sm font-medium text-black -900"
 //                                   >
 //                                     Your first name
 //                                   </label>
 //                                   <input
 //                                     type="text"
 //                                     id="first_name"
-//                                     className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+//                                     className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
 //                                     placeholder="Your first name"
 //                                     value={firstName}
 //                                     onChange={(e) =>
@@ -532,14 +532,14 @@
 //                                 <div className="w-full">
 //                                   <label
 //                                     htmlFor="last_name"
-//                                     className="block mb-2 text-sm font-medium text-primary-900"
+//                                     className="block mb-2 text-sm font-medium text-black -900"
 //                                   >
 //                                     Your last name
 //                                   </label>
 //                                   <input
 //                                     type="text"
 //                                     id="last_name"
-//                                     className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+//                                     className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
 //                                     placeholder="Your last name"
 //                                     value={lastName}
 //                                     onChange={(e) => setLastName(e.target.value)}
@@ -551,14 +551,14 @@
 //                               <div className="mb-2 sm:mb-6">
 //                                 <label
 //                                   htmlFor="email"
-//                                   className="block mb-2 text-sm font-medium text-primary-900"
+//                                   className="block mb-2 text-sm font-medium text-black -900"
 //                                 >
 //                                   Your email
 //                                 </label>
 //                                 <input
 //                                   type="email"
 //                                   id="email"
-//                                   className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+//                                   className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
 //                                   placeholder="your.email@mail.com"
 //                                   value={email}
 //                                   onChange={(e) => setEmail(e.target.value)}
@@ -569,14 +569,14 @@
 //                               <div className="mb-2 sm:mb-6">
 //                                 <label
 //                                   htmlFor="userName"
-//                                   className="block mb-2 text-sm font-medium text-primary-900"
+//                                   className="block mb-2 text-sm font-medium text-black -900"
 //                                 >
 //                                   User name
 //                                 </label>
 //                                 <input
 //                                   type="text"
 //                                   id="userName"
-//                                   className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+//                                   className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
 //                                   placeholder="fardeen_19"
 //                                   value={userName}
 //                                   onChange={(e) => setUserName(e.target.value)}
@@ -587,14 +587,14 @@
 //                               <div className="mb-6">
 //                                 <label
 //                                   htmlFor="message"
-//                                   className="block mb-2 text-sm font-medium text-primary-900"
+//                                   className="block mb-2 text-sm font-medium text-black -900"
 //                                 >
 //                                   Bio
 //                                 </label>
 //                                 <textarea
 //                                   id="message"
 //                                   rows="4"
-//                                   className="block p-2.5 w-full text-sm text-primary-900 bg-primary-50 rounded-lg border border-primary-300 focus:ring-primary-500 focus:border-primary-500"
+//                                   className="block p-2.5 w-full text-sm text-black -900 bg-primary-50 rounded-lg border border-primary-300 focus:ring-primary-500 focus:border-primary-500"
 //                                   placeholder="Write your bio here..."
 //                                   value={bio}
 //                                   onChange={(e) => setBio(e.target.value)}
@@ -604,7 +604,7 @@
 //                           </div>
 //                           <button
 //                             type="submit"
-//                             className="w-full py-4 px-4 text-sm font-medium text-primary-100 focus:outline-none bg-primary-500 rounded-lg border border-primary-200 hover:bg-primary-600 focus:z-10 focus:ring-4 focus:ring-primary-200"
+//                             className="w-full py-4 px-4 text-sm font-medium text-black -100 focus:outline-none bg-primary-500 rounded-lg border border-primary-200 hover:bg-primary-600 focus:z-10 focus:ring-4 focus:ring-primary-200"
 //                           >
 //                             Save changes
 //                           </button>
@@ -615,14 +615,14 @@
 //                       <div className="w-full">
 //                         <label
 //                           for="birth"
-//                           className="block mb-2 text-sm font-medium text-primary-900 "
+//                           className="block mb-2 text-sm font-medium text-black -900 "
 //                         >
 //                           Birth Date
 //                         </label>
 //                         <input
 //                           type="date"
 //                           id="birth"
-//                           className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+//                           className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 //                           placeholder="Your Birth date"
 //                           required
 //                         />
@@ -632,14 +632,14 @@
 //                       <div className="w-full">
 //                         <label
 //                           for="intrest"
-//                           className="block mb-2 text-sm font-medium text-primary-900 "
+//                           className="block mb-2 text-sm font-medium text-black -900 "
 //                         >
 //                           Intrest
 //                         </label>
 //                         <input
 //                           type="text"
 //                           id="intrest"
-//                           className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+//                           className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 //                           placeholder="Your Intrest"
 //                           required
 //                         />
@@ -648,14 +648,14 @@
 //                       <div className="w-full">
 //                         <label
 //                           for="looking"
-//                           className="block mb-2 text-sm font-medium text-primary-900 "
+//                           className="block mb-2 text-sm font-medium text-black -900 "
 //                         >
 //                           Looking For
 //                         </label>
 //                         <input
 //                           type="text"
 //                           id="looking"
-//                           className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+//                           className="bg-primary-50 border border-primary-300 text-black -900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
 //                           placeholder="Looking for"
 //                           required
 //                         />
@@ -665,14 +665,14 @@
 //                     <div className="mb-6">
 //                       <label
 //                         for="message"
-//                         className="block mb-2 text-sm font-medium text-primary-900 "
+//                         className="block mb-2 text-sm font-medium text-black -900 "
 //                       >
 //                         Bio
 //                       </label>
 //                       <textarea
 //                         id="message"
 //                         rows="4"
-//                         className="block p-2.5 w-full text-sm text-primary-900 bg-primary-50 rounded-lg border border-primary-300 focus:ring-primary-500 focus:border-primary-500 "
+//                         className="block p-2.5 w-full text-sm text-black -900 bg-primary-50 rounded-lg border border-primary-300 focus:ring-primary-500 focus:border-primary-500 "
 //                         placeholder="Write your bio here..."
 //                       ></textarea>
 //                     </div>

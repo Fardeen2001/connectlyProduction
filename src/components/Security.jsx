@@ -18,14 +18,14 @@ const Security = () => {
           <div className="w-1/2 mt-5">
             <label
               for="email"
-              className="block mb-2 text-sm font-medium text-primary-900 "
+              className="block mb-2 text-sm font-medium text-black  "
             >
               New Email Address
             </label>
             <input
               type="email"
               id="email"
-              className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+              className="bg-primary-50 border border-primary-300 text-black  text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
               placeholder="Enter new email"
               required
             />
@@ -51,14 +51,14 @@ const Security = () => {
               {" "}
               <label
                 for="currPassword"
-                className="block mb-2 text-sm font-medium text-primary-900 "
+                className="block mb-2 text-sm font-medium text-black  "
               >
                 Current password
               </label>
               <input
                 type="password"
                 id="currPassword"
-                className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+                className="bg-primary-50 border border-primary-300 text-black  text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
                 placeholder="Enter current password"
                 required
               />
@@ -67,14 +67,14 @@ const Security = () => {
               {" "}
               <label
                 for="newPassword"
-                className="block mb-2 text-sm font-medium text-primary-900 "
+                className="block mb-2 text-sm font-medium text-black  "
               >
                 New password
               </label>
               <input
                 type="password"
                 id="newPassword"
-                className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+                className="bg-primary-50 border border-primary-300 text-black  text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
                 placeholder="Enter new password"
                 required
               />
@@ -83,14 +83,14 @@ const Security = () => {
               {" "}
               <label
                 for="confirmPassword"
-                className="block mb-2 text-sm font-medium text-primary-900 "
+                className="block mb-2 text-sm font-medium text-black "
               >
                 Confirm New password
               </label>
               <input
                 type="password"
                 id="confirmPassword"
-                className="bg-primary-50 border border-primary-300 text-primary-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+                className="bg-primary-50 border border-primary-300 text-black  text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
                 placeholder="Enter current password again"
                 required
               />

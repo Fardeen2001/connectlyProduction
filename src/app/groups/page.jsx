@@ -140,10 +140,10 @@ const Page = () => {
                       <div className="flex flex-col">
                         <h1 className="text-xl font-semibold">{g.title}</h1>
                         <div className="flex items-center gap-3">
-                          <span className="text-xs text-[#656565]">
+                          <span className="text-xs text-black ">
                             Post {g.posts}
                           </span>
-                          <span className="text-xs text-[#656565]">
+                          <span className="text-xs text-black ">
                             Members {g.members}
                           </span>
                         </div>

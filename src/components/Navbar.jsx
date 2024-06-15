@@ -62,7 +62,7 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-3 text-black">
+        <div className="flex items-center justify-center gap-3 text-black ">
           {/* sideProfile links */}
           <Image alt="connectly" width={21} src={bell} />
           <Image alt="connectly" width={21} src={bag} />

@@ -98,10 +98,10 @@ const Notification = () => {
                   {notification.type === "like" ? "New Like" : "New Comment"}
                 </h2>
                 <p>{notification.message}</p>
-                <a href={notification.link} className="text-primary underline">
+                <a href={notification.link} className="text-black  underline">
                   View
                 </a>
-                <p className="text-primary/50">
+                <p className="text-black /50">
                   {new Date(notification.createdAt).toLocaleString()}
                 </p>
                 <div className="flex items-center gap-2">

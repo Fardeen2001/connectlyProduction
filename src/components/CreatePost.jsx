@@ -73,7 +73,7 @@ const CreatePost = () => {
   return (
     <div
       onClick={handleToggle}
-      className="w-[700px] h-full bg-white shadow-lg p-4 rounded-xl relative text-black"
+      className="w-[700px] h-full bg-white shadow-lg p-4 rounded-xl relative text-black "
     >
       <form onSubmit={handleSubmit}>
         <div className="flex items-center gap-3">
@@ -91,7 +91,7 @@ const CreatePost = () => {
           </div>
         </div>
 
-        <hr className="my-5 text-black" />
+        <hr className="my-5 text-black " />
 
         <div className="flex items-center justify-between">
           <label className="flex items-center gap-1 cursor-pointer">
@@ -116,7 +116,7 @@ const CreatePost = () => {
       {isOpen && (
         <>
           <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
-            <div className="bg-white text-black shadow-lg px-3 py-5 w-1/2 h-[30rem] overflow-y-auto rounded-lg overflow-y-auto">
+            <div className="bg-white text-black  shadow-lg px-3 py-5 w-1/2 h-[30rem] overflow-y-auto rounded-lg overflow-y-auto">
               <div className="flex items-center justify-between">
                 <h1 className="text-xl font-semibold">Create Post</h1>
                 <p

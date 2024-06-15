@@ -88,12 +88,12 @@ const Profile = () => {
                     {profileData.user.name}
                   </h1>
                   <div className="flex flex-col ">
-                    <p className="text-sm text-[#656565]">Bio</p>
+                    <p className="text-sm text-black ">Bio</p>
                     <p className="text-xs w-[15rem]">{profileData.bio}</p>
                   </div>
                 </div>
                 {!request && (
-                  <div className="flex items-center gap-6 mb-14 text-[#656565]">
+                  <div className="flex items-center gap-6 mb-14 text-black ">
                     <div className="flex flex-col">
                       <p className="font-medium ">Posts</p>
                       <p className="font-medium ">55</p>
@@ -192,7 +192,7 @@ const Profile = () => {
                       src={fp.img}
                       
                     />
-                    <p className="text-xs text-[#656565]">{fp.name}</p>
+                    <p className="text-xs text-black ">{fp.name}</p>
                   </div>
                 })}
 

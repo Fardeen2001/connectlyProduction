@@ -94,7 +94,7 @@ const [request, setRequest] = useState(false);
               >
                 @fardeen_19
               </a>
-              <p className="mt-2 text-gray-500 text-sm">
+              <p className="mt-2 text-gray-700  text-sm">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s,{" "}
@@ -102,7 +102,7 @@ const [request, setRequest] = useState(false);
             </div>
             <hr className="mt-6" />
             {!request && (
-              <div className="flex  bg-gray-50 text-black">
+              <div className="flex  bg-gray-50 text-black ">
                 <div
                   className="text-center w-1/2 p-4 hover:bg-gray-100 cursor-pointer"
                   onClick={() => setActiveTab("posts")}
@@ -133,7 +133,7 @@ const [request, setRequest] = useState(false);
               </div>
             )}
             {request && (
-              <div className="flex  bg-gray-50 text-black">
+              <div className="flex  bg-gray-50 text-black ">
                 <div
                   className={`text-center w-1/2 p-4 hover:bg-gray-100 cursor-pointer ${
                     activeTab === "pendingRequests" &&

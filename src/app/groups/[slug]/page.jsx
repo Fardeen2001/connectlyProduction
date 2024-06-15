@@ -131,7 +131,7 @@ const Page = () => {
                       <input
                         type="text"
                         placeholder="Search Group"
-                        className="px-4 py-2 bg-transparent focus:outline-none placeholder:text-gray-600"
+                        className="px-4 py-2 bg-transparent focus:outline-none placeholder:text-gray-800 "
                       />
                       <CiSearch size={22} />
                     </div>
@@ -148,7 +148,7 @@ const Page = () => {
                             <li className="px-4 py-2 hover:bg-gray-100">
                               <Link
                                 href={"/group/group-details"}
-                                className="text-gray-600 hover:text-gray-900 flex items-center gap-2"
+                                className="text-gray-800  hover:text-gray-900 flex items-center gap-2"
                               >
                                 <FaUsers size={22} /> View Members Request
                               </Link>
@@ -156,7 +156,7 @@ const Page = () => {
                             <li className="px-4 py-2 hover:bg-gray-100">
                               <Link
                                 href={"/group/group-details"}
-                                className="text-gray-600 hover:text-gray-900 flex items-center gap-2"
+                                className="text-gray-800  hover:text-gray-900 flex items-center gap-2"
                               >
                                 <FiSend size={22} /> Share Group
                               </Link>

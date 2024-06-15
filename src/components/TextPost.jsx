@@ -25,7 +25,7 @@ const TextPost = ({
         <div className="flex items-center justify-between w-full">
           <div className="flex flex-col ">
             <h1 className="font-medium">Alexandro Vargas</h1>
-            <p className="text-xs text-[#656565]">2h Ago</p>
+            <p className="text-xs text-black ">2h Ago</p>
           </div>
 
           <BsThreeDotsVertical size={22} />
@@ -51,11 +51,11 @@ const TextPost = ({
 
       <div className="flex justify-between items-center">
         <div className="flex gap-5 items-center">
-          <p className="text-[#656565]">{like} likes</p>
-          <p className="text-[#656565]">{comments.length} comments</p>
+          <p className="text-black ">{like} likes</p>
+          <p className="text-black ">{comments.length} comments</p>
         </div>
 
-        <p className="text-[#656565]text-xs">2k share</p>
+        <p className="text-black text-xs">2k share</p>
       </div>
 
       <hr className="my-2" />
@@ -101,7 +101,7 @@ const TextPost = ({
                   className="border border-gray-300 rounded-md p-2 mb-2"
                 >
                   <p className="text-gray-700">{comment.text}</p>
-                  <p className="text-gray-500 text-sm">
+                  <p className="text-gray-700  text-sm">
                     {new Date(comment.timestamp).toLocaleString()}
                   </p>
                 </li>

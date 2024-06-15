@@ -54,7 +54,7 @@ const InviteFriends = ({ setShowPopup }) => {
               <input
                 type="text"
                 placeholder="Search Name"
-                className="px-4 py-2 bg-transparent focus:outline-none placeholder:text-gray-600"
+                className="px-4 py-2 bg-transparent focus:outline-none placeholder:text-gray-800 "
               />
               <CiSearch size={22} />
             </div>
@@ -123,7 +123,7 @@ const InviteFriends = ({ setShowPopup }) => {
               <input
                 type="text"
                 placeholder="Search Name"
-                className="px-4 py-2 bg-transparent focus:outline-none placeholder:text-gray-600"
+                className="px-4 py-2 bg-transparent focus:outline-none placeholder:text-gray-800 "
               />
               <CiSearch size={22} />
             </div>

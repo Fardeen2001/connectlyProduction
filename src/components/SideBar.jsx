@@ -62,7 +62,7 @@ const SideBar = ({ views, edit }) => {
               {views ? (
                 <>
                   <div className="flex gap-5 flex-col">
-                    <div className="rounded-lg overflow-hidden text-black">
+                    <div className="rounded-lg overflow-hidden text-black ">
                       <div className="bg-[#F45044] text-white px-5 py-3">
                         <p className="w-32">How to get more views:</p>
                       </div>
@@ -93,7 +93,7 @@ const SideBar = ({ views, edit }) => {
                         </div>
                       </div>
                     </div>
-                    <div className="bg-[#FFEDED] text-black border-b-[1px] px-5 py-3 flex gap-3 items-center rounded-lg">
+                    <div className="bg-[#FFEDED] text-black  border-b-[1px] px-5 py-3 flex gap-3 items-center rounded-lg">
                       <input
                         checked
                         type="checkbox"
@@ -129,20 +129,20 @@ const SideBar = ({ views, edit }) => {
                         </Link>
                       </div>
 
-                      <div className="bg-[#FFEDED] border-b-[1px] px-5 py-3 flex flex-col text-[#656565]">
+                      <div className="bg-[#FFEDED] border-b-[1px] px-5 py-3 flex flex-col text-black ">
                         <p>Language</p>
                         <p className="text-xs">English, Hindi</p>
                       </div>
-                      <div className="bg-[#FFEDED] border-b-[1px] px-5 py-3 flex flex-col text-[#656565]">
+                      <div className="bg-[#FFEDED] border-b-[1px] px-5 py-3 flex flex-col text-black ">
                         <p>Vibe Matches</p>
                         <p className="text-xs">12</p>
                       </div>
-                      <div className="bg-[#FFEDED] border-b-[1px] px-5 py-3 flex flex-col text-[#656565]">
+                      <div className="bg-[#FFEDED] border-b-[1px] px-5 py-3 flex flex-col text-black ">
                         <p>City/Town</p>
                         <p className="text-xs">Kolkata</p>
                       </div>
                     </div>
-                    <div className="bg-[#FFEDED] border-b-[1px] px-5 py-3 flex gap-3 items-center rounded-lg text-[#656565]">
+                    <div className="bg-[#FFEDED] border-b-[1px] px-5 py-3 flex gap-3 items-center rounded-lg text-black ">
                       <Image
                         alt="connectly"
                         src={men_women}

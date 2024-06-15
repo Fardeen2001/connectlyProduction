@@ -85,7 +85,7 @@ const Page = () => {
   };
 
   return (
-    <div className="text-black h-full w-full">
+    <div className="text-black  h-full w-full">
       {/* //don't remove this */}
       <Suspense>
         <SearchParamsComp setUserId={setUserId} />
@@ -116,7 +116,7 @@ const Page = () => {
                 onClick={(e) => {
                   handleDeselectInterest(interest);
                 }}
-                className="text-gray-600 hover:text-gray-800 ml-2"
+                className="text-gray-800  hover:text-gray-800 ml-2"
               >
                 <RxCross1 size={18} />
               </button>

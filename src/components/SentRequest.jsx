@@ -55,7 +55,7 @@ const SentRequest = (props) => {
         props.sentRequestData.map((item) => (
           <div
             key={item._id}
-            className="flex items-center justify-between p-5 text-black"
+            className="flex items-center justify-between p-5 text-black "
           >
             <div className="flex items-center gap-2">
               <img

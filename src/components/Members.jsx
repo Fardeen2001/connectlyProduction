@@ -11,10 +11,10 @@ const Members = () => {
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-2">
             <h1 className="text-xl font-semibold">Members</h1>
-            <span className="text-[#656565] text-lg">4,05,369</span>
+            <span className="text-black  text-lg">4,05,369</span>
           </div>
 
-          <p className="text-[#656565] ">Lorem ipsum dolor sit amet.</p>
+          <p className="text-black  ">Lorem ipsum dolor sit amet.</p>
         </div>
 
         <hr />

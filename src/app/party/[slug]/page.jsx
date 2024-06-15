@@ -128,7 +128,7 @@ const Profile = () => {
                       <input
                         type="text"
                         placeholder="Search Group"
-                        className="px-4 py-2 bg-transparent focus:outline-none placeholder:text-gray-600"
+                        className="px-4 py-2 bg-transparent focus:outline-none placeholder:text-gray-800 "
                       />
                       <CiSearch size={22} />
                     </div>
@@ -145,7 +145,7 @@ const Profile = () => {
                             <li className="px-4 py-2 hover:bg-gray-100">
                               <Link
                                 href={"/group/group-details"}
-                                className="text-gray-600 hover:text-gray-900 flex items-center gap-2"
+                                className="text-gray-800  hover:text-gray-900 flex items-center gap-2"
                               >
                                 <FaUsers size={22} /> View Members Request
                               </Link>
@@ -153,7 +153,7 @@ const Profile = () => {
                             <li className="px-4 py-2 hover:bg-gray-100">
                               <Link
                                 href={"/group/group-details"}
-                                className="text-gray-600 hover:text-gray-900 flex items-center gap-2"
+                                className="text-gray-800  hover:text-gray-900 flex items-center gap-2"
                               >
                                 <FiSend size={22} /> Share Group
                               </Link>
@@ -203,7 +203,6 @@ const Profile = () => {
                           alt="connectly"
                           className="h-16 w-full rounded"
                           src={sideP}
-                      
                         />
                       </div>
                     );
@@ -268,29 +267,28 @@ const Profile = () => {
           <div className="flex flex-col gap-5">
             <div className="bg-white shadow-lg w-full px-3 py-5 rounded-lg ">
               <h1 className="text-xl font-semibold">Details</h1>
-              <p className="flex items-center gap-2 text-[#656565] my-2">
-                <FaUserFriends size={22} className="text-[#656565]" /> 4.5k
-                people responded
+              <p className="flex items-center gap-2 text-black  my-2">
+                <FaUserFriends size={22} className="text-black " /> 4.5k people
+                responded
               </p>
-              <p className="flex items-center gap-2 text-[#656565] my-2">
-                <FaUserAlt size={20} className="text-[#656565]" /> Event by{" "}
-                <span className="text-black">
+              <p className="flex items-center gap-2 text-black  my-2">
+                <FaUserAlt size={20} className="text-black " /> Event by{" "}
+                <span className="text-black ">
                   Orlando Pirates greater Gugulethu Branch
                 </span>
               </p>
-              <p className="flex items-center gap-2 text-[#656565] my-2">
-                <IoCallSharp size={22} className="text-[#656565]" /> (+244)
-                12458 124586
+              <p className="flex items-center gap-2 text-black  my-2">
+                <IoCallSharp size={22} className="text-black " /> (+244) 12458
+                124586
               </p>
-              <p className="flex items-center gap-2 text-[#656565] my-2">
-                <IoMdMail size={22} className="text-[#656565]" />{" "}
-                exmple@gmail.com
+              <p className="flex items-center gap-2 text-black  my-2">
+                <IoMdMail size={22} className="text-black " /> exmple@gmail.com
               </p>
             </div>
 
             <div className="bg-white shadow-lg w-full px-3 py-5 rounded-lg ">
               <h1 className="text-xl font-semibold">About Party</h1>
-              <p className="flex items-center gap-2 text-[#656565] my-2">
+              <p className="flex items-center gap-2 text-black  my-2">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Ducimus, error voluptatum. Fugiat praesentium vitae commodi
                 tenetur veniam vel officia ea. Lorem ipsum dolor sit, amet
@@ -352,7 +350,7 @@ const Profile = () => {
                     <input
                       type="text"
                       placeholder="Search Name"
-                      className="px-4 py-2 bg-transparent focus:outline-none placeholder:text-gray-600"
+                      className="px-4 py-2 bg-transparent focus:outline-none placeholder:text-gray-800 "
                     />
                     <CiSearch size={22} />
                   </div>
@@ -437,7 +435,7 @@ const Profile = () => {
                     <input
                       type="text"
                       placeholder="Search Name"
-                      className="px-4 py-2 bg-transparent focus:outline-none placeholder:text-gray-600"
+                      className="px-4 py-2 bg-transparent focus:outline-none placeholder:text-gray-800 "
                     />
                     <CiSearch size={22} />
                   </div>

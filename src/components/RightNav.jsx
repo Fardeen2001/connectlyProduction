@@ -21,7 +21,7 @@ const RightNav = () => {
       >
         <div
           id="sidebar"
-          className="bg-white text-black h-fit md:block shadow-xl px-3 w-[14rem] overflow-x-hidden transition-transform duration-300 ease-in-out rounded-lg"
+          className="bg-white text-black  h-fit md:block shadow-xl px-3 w-[14rem] overflow-x-hidden transition-transform duration-300 ease-in-out rounded-lg"
           x-show="sidenav"
         >
           <div className="py-3 px-1">
@@ -46,7 +46,7 @@ const RightNav = () => {
                 <Image
                   alt="connectly"
                   src={feed}
-                  className="text-black w-5 h-5"
+                  className="text-black  w-5 h-5"
                 />{" "}
                 Feeds
               </Link>

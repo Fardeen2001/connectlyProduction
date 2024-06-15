@@ -29,9 +29,9 @@ const Chat = () => {
         </div>
         <div className="w-full h-[80vh] bg-primary"></div>
         <form className="flex items-center w-full h-[10vh] gap-2 bg-primary p-2">
-          <FaMicrophone className="text-2xl text-primary" />
+          <FaMicrophone className="text-2xl text-black " />
           <input
-            className="w-full border rounded-full py-2 px-4 text-black"
+            className="w-full border rounded-full py-2 px-4 text-black "
             type="text"
             placeholder="Type your message..."
             value={chat}

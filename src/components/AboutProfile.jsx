@@ -69,23 +69,23 @@ const AboutProfile = ({ profileData }) => {
         <h1 className="text-lg font-semibold">Profile Details</h1>
 
         <div className="flex flex-col gap-1">
-          <p className="text-[#656565] text-sm">Occupation</p>
+          <p className="text-black  text-sm">Occupation</p>
           <p className="text-xs">Developer at Myntra</p>
         </div>
 
         <div className="flex flex-col gap-1">
-          <p className="text-[#656565] text-sm">Bio</p>
+          <p className="text-black  text-sm">Bio</p>
           <p className="text-xs">{profileData.bio}</p>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h1 className="text-[#656565] text-sm">Interest</h1>
+          <h1 className="text-black  text-sm">Interest</h1>
 
           <div className="flex flex-wrap gap-2">
             {profileData.interests.map((interest, index) => (
               <p
                 key={index}
-                className={`rounded-full text-xs text-[#656565] border-[1px] border-[#F45044] px-2 py-1 flex items-center justify-center`}
+                className={`rounded-full text-xs text-black  border-[1px] border-[#F45044] px-2 py-1 flex items-center justify-center`}
               >
                 {interest}
               </p>
@@ -100,7 +100,7 @@ const AboutProfile = ({ profileData }) => {
           {personalInfo.map((info, index) => {
             return (
               <div key={index} className="">
-                <h2 className="text-[#656565] text-xs">{info.heading}</h2>
+                <h2 className="text-black  text-xs">{info.heading}</h2>
                 <p className="font-medium text-sm">{info.details}</p>
               </div>
             );
