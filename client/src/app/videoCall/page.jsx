@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import AgoraRTC, { createClient } from "agora-rtc-sdk-ng";
-import VideoPlayer from "@/components/VideoPlayer";
 const APP_ID = "03d44a1c16a54c0fb0d2ad170a2fd29e";
 const TOKEN = "007eJxTYOAufbdSXf9Vc8Mt113feDyb9lz12VGjnTbp6IbMNl93dXsFBgPjFBOTRMNkQ7NEU5Nkg7QkgxSjxBRDc4NEo7QUI8tUu9eJaQ2BjAynbrewMjJAIIjPyZBb6ZyRmJeXmsPAAAAV/CJB";
 const CHANNEL = "myChannel";
@@ -126,7 +125,9 @@ const VideoRoom = () => {
       <div className="w-auto h-screen">
         <div className="w-auto h-full">
           {users.map((user) => (
-            <VideoPlayer key={user.uid} user={user} />
+            <>
+              Video
+            </>
           ))}
         </div>
       </div>
