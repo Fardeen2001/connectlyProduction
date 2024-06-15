@@ -8,12 +8,12 @@ import {
   RightNav,
   Footer,
 } from "../components";
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
   const router = useRouter();
-  useLayoutEffect(() => {
+  useEffect(() => {
     router.replace("/feed");
   }, []);
   return (
