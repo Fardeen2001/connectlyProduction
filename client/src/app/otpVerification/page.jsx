@@ -15,7 +15,7 @@ const OtpVerification = () => {
   const [otp5, setOtp5] = useState();
   const [otp6, setOtp6] = useState();
   const userEmail = useSelector((state) => state.auth.email);
-  console.log(userEmail);
+  //console.log(userEmail);
   const router = useRouter();
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -37,7 +37,29 @@ const OtpVerification = () => {
         // Redirect to OTP page
         
           Cookies.set('token', response.data.token)
-          router.replace("/profile");
+          //create user profile
+          try {
+            // Making the profile creation request
+            const profileResponse = await axios.post(
+              `${apiURL}/api/profile`,
+              {},
+              {
+                headers: {
+                  "x-auth-token": response.data.token
+                }
+              }
+            );
+          
+            // Logging the response for debugging
+            console.log(profileResponse);
+          
+            // Redirecting to the profile page
+            router.replace("/profile");
+          } catch (error) {
+            // Handling any errors that occur during the request
+            console.error("Error creating profile:", error);
+          }
+          
         
       } catch (error) {
         console.log(error)

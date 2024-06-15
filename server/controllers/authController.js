@@ -148,7 +148,7 @@ exports.verifyOtp = async (req, res, next) => {
 // Middleware to protect routes
 exports.authenticate = (req, res, next) => {
   const token = req.header("x-auth-token");
-
+  //console.log(token)
   if (!token) {
     console.log("NOr token");
     return res.status(401).json({ message: "No token, authorization denied" });
@@ -156,6 +156,7 @@ exports.authenticate = (req, res, next) => {
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    //console.log(decoded)
     req.user = decoded.user;
     next();
   } catch (err) {

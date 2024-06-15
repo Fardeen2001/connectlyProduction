@@ -27,7 +27,9 @@ const Profile = () => {
       },
     });
 
+    
     const responseData = await response.json();
+    console.log(responseData)
     if (response.status === 200) {
       setProfileData(responseData);
     }
