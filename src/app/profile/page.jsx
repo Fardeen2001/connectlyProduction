@@ -10,15 +10,18 @@ import MediaPost from "@/components/MediaPost";
 import Cookies from "js-cookie";
 import Loading from "@/components/Loading";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useToast } from "react-toastify";
 
 const Profile = () => {
   const [request, setRequest] = useState(false);
   const [activeTab, setActiveTab] = useState("timeline");
   const [profileData, setProfileData] = useState(null);
-
+  const token = Cookies.get("token");
+  const router = useRouter();
+  console.log(token);
+  const { toast } = useToast();
   async function fetchProfileData() {
-    const token = Cookies.get("token");
-    console.log(token);
     const apiURL = process.env.NEXT_PUBLIC_API_URL;
     const response = await fetch(`${apiURL}/api/profile/me`, {
       method: "GET",
@@ -36,7 +39,14 @@ const Profile = () => {
   }
 
   useEffect(() => {
-    fetchProfileData();
+    if (token) {
+      fetchProfileData();
+    } else {
+      toast({
+        description: "Please, Login",
+      });
+      router.replace("/auth");
+    }
   }, []);
 
   const handleTabChange = (tab) => {
