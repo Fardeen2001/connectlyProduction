@@ -29,8 +29,10 @@ const Notification = () => {
         setLoading(false);
       }
     };
-
     fetchNotifications();
+    if (localStorage.getItem("token")) {
+      fetchNotifications();
+    }
   }, []);
 
   const markAsRead = async (id) => {
@@ -41,7 +43,9 @@ const Notification = () => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "x-auth-token": `${localStorage.getItem("token")}`,
+            "x-auth-token": `${
+              localStorage.getItem("token") && localStorage.getItem("token")
+            }`,
           },
         }
       );
@@ -102,7 +106,12 @@ const Notification = () => {
                 </p>
                 <div className="flex items-center gap-2">
                   {!notification.isRead && (
-                    <Button onClick={() => markAsRead(notification._id)}>
+                    <Button
+                      onClick={() =>
+                        localStorage.getItem("token") &&
+                        markAsRead(notification._id)
+                      }
+                    >
                       Mark as Read
                     </Button>
                   )}
