@@ -10,8 +10,8 @@ import {
   bag,
   message,
 } from "../app/assets";
-import Image from "next/Image";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   return (

@@ -1,6 +1,7 @@
 "use client";
 import { Pic, calendar, cover_profile } from "@/app/assets";
-import Image from "next/Image";
+import Image from "next/image";
+
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";

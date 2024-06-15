@@ -3,12 +3,13 @@ import { Post, RightNav, SideBar } from "@/components";
 import { Img, Pic, cover_profile } from "../assets";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Image from "next/Image";
+
 import TimeLine from "@/components/TimeLine";
 import AboutProfile from "@/components/AboutProfile";
 import MediaPost from "@/components/MediaPost";
 import Cookies from "js-cookie";
 import Loading from "@/components/Loading";
+import Image from "next/image";
 
 const Profile = () => {
   const [request, setRequest] = useState(false);

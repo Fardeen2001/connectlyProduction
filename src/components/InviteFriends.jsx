@@ -1,6 +1,6 @@
 "use client";
 import { post2 } from "@/app/assets";
-import Image from "next/Image";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { GoPlus } from "react-icons/go";

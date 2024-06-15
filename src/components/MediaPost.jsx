@@ -1,6 +1,7 @@
 "use client";
 import { Media_profile, Photos, Photos2 } from "@/app/assets";
-import Image from "next/Image";
+import Image from "next/image";
+
 import React, { useEffect, useState } from "react";
 
 const MediaPost = () => {
