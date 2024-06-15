@@ -1,3 +1,4 @@
+"use client";
 import "./globals.css";
 import {
   Post,
@@ -7,7 +8,7 @@ import {
   RightNav,
   Footer,
 } from "../components";
-import { useEffect, useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
