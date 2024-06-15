@@ -48,9 +48,6 @@ const RightNavBar = () => {
           </li>
         </ul>
       </div>
-      <div>
-        <ThemeToggleMode />
-      </div>
     </div>
   );
 };

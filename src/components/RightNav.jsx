@@ -8,6 +8,7 @@ import {
 } from "react-icons/io5";
 import AvatarComponent from "./AvatarComponent";
 import Image from "next/image";
+import { User } from "lucide-react";
 
 const RightNav = () => {
   return (
@@ -69,6 +70,12 @@ const RightNav = () => {
                 className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
               >
                 <IoNotificationsOutline size={22} /> Notification
+              </Link>
+              <Link
+                href={"/auth"}
+                className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
+              >
+                <User size={22} /> Sign Up
               </Link>
             </div>
           </div>
