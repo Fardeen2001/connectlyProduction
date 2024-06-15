@@ -1,7 +1,7 @@
 "use client";
 import { Post, RightNav, SideBar } from "@/components";
 import { Img, Pic, cover_profile } from "../assets";
-import Link from "next/link";
+
 import React, { useEffect, useState } from "react";
 
 import TimeLine from "@/components/TimeLine";
