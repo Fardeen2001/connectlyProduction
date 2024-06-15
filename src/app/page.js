@@ -10,6 +10,7 @@ import {
 } from "../components";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Loading from "@/components/Loading";
 
 export default function Home() {
   const router = useRouter();
@@ -18,6 +19,7 @@ export default function Home() {
   }, []);
   return (
     <>
+      <Loading />
       {/* <div className="grid-container relative">
         <div className="p-5 flex items-center gap-5 story-card">
           <StoryCard />
