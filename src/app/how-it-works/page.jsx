@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import { Sec1, stars } from "../assets";
+import stars from "../assets/stars.png";
+import sec1 from "../assets/sec1.png";
 
 const Page = () => {
   const works = [
@@ -14,7 +15,7 @@ const Page = () => {
     {
       title: "Setting Up Your Profile:",
       subTitle: "Profile Creation",
-      li1: "After logging in, you'll be guided to set up your profile.",
+      li1: "After logging in, you&apos;ll be guided to set up your profile.",
       li2: " Fill in your personal information, upload a profile picture, and add a short bio.",
       li3: "Select your interests and preferences to help Connectly find like-minded people for you.",
     },
@@ -43,7 +44,7 @@ const Page = () => {
       title: "Real-Time Communication",
       subTitle: "Chat Feature",
       li1: "Chat with your friends in real-time using the messaging system.",
-      li2: "To start a chat, click on a friend's profile and send a message.",
+      li2: "To start a chat, click on a friend&apos;s profile and send a message.",
       li3: "If you want to chat with someone new, send them a friend request first. Once accepted, you can start chatting.",
     },
     {
@@ -62,7 +63,7 @@ const Page = () => {
       title: "Privacy and Preferences",
       subTitle: "Privacy Settings",
       li1: "Control your privacy by adjusting settings for who can see your profile and posts.",
-      li2: "Turn off location sharing when you don't want to be found by nearby users.",
+      li2: "Turn off location sharing when you don&apos;t want to be found by nearby users.",
       sec: true,
       subTitle2: "Preferences",
       li1_1:
@@ -87,7 +88,7 @@ const Page = () => {
   return (
     <div className="px-4">
       <div className="w-[25rem] h-[15rem] md:w-[40rem] md:h-[22rem] mx-auto my-10">
-        <Image src={Sec1} className="w-full h-full" />
+        <Image src={sec1} className="w-full h-full" />
       </div>
 
       <div className="text-center">
@@ -96,7 +97,7 @@ const Page = () => {
             {" "}
             Welcome to Connectly!
           </span>
-          <br /> Here's a quick guide on how to make the most out of your
+          <br /> Here&apos;s a quick guide on how to make the most out of your
           experience:
         </h1>
       </div>

@@ -25,14 +25,14 @@ const Section1 = () => {
           </h1>
 
           <p className="mb-5 leading-relaxed text-sm md:text-lg text-gray-500 ">
-            Share your thoughts, sneak a peek on others’ posts, vibe with
+            Share your thoughts, sneak a peek on others&apos; posts, vibe with
             like-minded souls, and keep the cycle going on!
           </p>
 
           <p className="leading-relaxed text-sm md:text-lg text-gray-500 ">
-            Don't stress over privacy, we’ve got you covered. Like a superhero’s
-            secret identity, your location stays your own unless you wish
-            otherwise.
+            Don&apos;t stress over privacy, we&apos;ve got you covered. Like a
+            superhero&apos;s secret identity, your location stays your own
+            unless you wish otherwise.
           </p>
         </div>
         {/* <!-- content - end --> */}

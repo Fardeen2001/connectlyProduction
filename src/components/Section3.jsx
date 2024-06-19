@@ -14,13 +14,13 @@ const Section3 = () => {
           </p>
 
           <h1 className="mb-1 text-3xl font-medium font-serif text-[#F45044] md:mb-3">
-            We've Got Your Back!
+            We&apos;ve Got Your Back!
           </h1>
 
           <p className="mb-5 text-xs leading-relaxed text-gray-500 lg:w-4/5 xl:text-lg">
-            Don't stress over privacy, we’ve got you covered. Like a superhero’s
-            secret identity, your location stays your own unless you wish
-            otherwise.
+            Don&apos;t stress over privacy, we&apos;ve got you covered. Like a
+            superhero&apos;s secret identity, your location stays your own
+            unless you wish otherwise.
           </p>
 
           <ul className="flex flex-col gap-2">
