@@ -23,11 +23,11 @@ const Page = () => {
   }
 
   return (
-    <div className="flex justify-between p-5 rounded-lg">
+    <div className="flex justify-between p-2 rounded-lg h-screen w-screen overflow-hidden">
       <div>
         <SideBar />
       </div>
-      <div className="flex flex-col h-screen w-[50vw] mx-auto bg-secondary rounded-xl ">
+      <div className="flex flex-col h-screen w-[50vw] mx-auto bg-secondary rounded-xl">
         <div className="w-full h-[10vh] p-5">
           <h1 className="text-2xl font-medium">Account Settings</h1>
         </div>
