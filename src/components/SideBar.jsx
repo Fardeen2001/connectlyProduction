@@ -20,7 +20,7 @@ const SideBar = ({ views, edit }) => {
       >
         <div
           id="sidebar"
-          className="bg-white text-white h-full md:block shadow-xl px-3 w-30 md:w-72 overflow-x-hidden transition-transform duration-300 ease-in-out rounded-md"
+          className="bg-white text-black  h-full md:block shadow-xl px-3 w-30 md:w-72 overflow-x-hidden transition-transform duration-300 ease-in-out rounded-md"
           x-show="sidenav"
         >
           <div className="py-5 px-1">
@@ -32,28 +32,28 @@ const SideBar = ({ views, edit }) => {
               <div className="py-5 flex flex-col gap-1">
                 <Link
                   href={"/Pref"}
-                  className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
+                  className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-black  hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
                 >
                   <MdOutlineInterests size={22} /> Interest
                 </Link>
 
                 <Link
                   href={"/groups"}
-                  className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
+                  className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-black  hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
                 >
                   <GrGroup size={22} /> Groups
                 </Link>
 
                 <Link
                   href={"/party"}
-                  className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
+                  className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-black  hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
                 >
                   <LuPartyPopper size={22} /> Party
                 </Link>
 
                 <Link
                   href={"/"}
-                  className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
+                  className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-black  hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
                 >
                   <LiaUserFriendsSolid size={22} /> Friends
                 </Link>
@@ -63,7 +63,7 @@ const SideBar = ({ views, edit }) => {
                 <>
                   <div className="flex gap-5 flex-col">
                     <div className="rounded-lg overflow-hidden text-black ">
-                      <div className="bg-[#F45044] text-white px-5 py-3">
+                      <div className="bg-[#F45044] text-black  px-5 py-3">
                         <p className="w-32">How to get more views:</p>
                       </div>
 
@@ -105,7 +105,7 @@ const SideBar = ({ views, edit }) => {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-[#F45044] w-full py-10 px-5 text-white flex flex-col gap-3 text-xs">
+                  <div className="bg-[#F45044] w-full py-10 px-5 text-black  flex flex-col gap-3 text-xs">
                     <p>Tap a checkbox to track your progress</p>
                     <button className="border-[1px] rounded-sm border-white px-2 py-1">
                       View progress
@@ -120,7 +120,7 @@ const SideBar = ({ views, edit }) => {
                 <>
                   <div className="flex gap-5 flex-col">
                     <div className="rounded-lg overflow-hidden">
-                      <div className="bg-[#F45044] text-white px-5 py-7">
+                      <div className="bg-[#F45044] text-black  px-5 py-7">
                         <Link
                           href={"/editProfile"}
                           className="flex items-center gap-2"

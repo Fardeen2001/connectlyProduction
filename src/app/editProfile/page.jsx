@@ -1,14 +1,14 @@
 "use client";
 import { RightNav, SideBar } from "@/components";
 import BlockList from "@/components/BlockList";
-import EditProfileModal from "@/components/EditProfileModal";
+import ProfileDetails from "@/components/EditProfileModal";
 import Loading from "@/components/Loading";
 import NotificationEdit from "@/components/NotificationEdit";
 import Security from "@/components/Security";
 import React, { useEffect, useState } from "react";
 
 const Page = () => {
-  const [activeTab, setActiveTab] = useState("security");
+  const [activeTab, setActiveTab] = useState("edit");
 
   const [loading, setLoading] = useState(true);
 
@@ -76,7 +76,7 @@ const Page = () => {
           </ul>
         </div>
         <div className="h-[80vh] overflow-y-auto">
-          {activeTab === "edit" && <EditProfileModal />}
+          {activeTab === "edit" && <ProfileDetails />}
           {activeTab === "security" && <Security />}
           {activeTab === "notification" && <NotificationEdit />}
           {activeTab === "blocklist" && <BlockList />}

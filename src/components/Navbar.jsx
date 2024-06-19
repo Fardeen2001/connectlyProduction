@@ -31,7 +31,7 @@ const Navbar = () => {
             {/* NavLinks */}
             <Link
               href={"/"}
-              className="text-white bg-[#FF578E] text-xs rounded-full px-4 py-2 flex items-center gap-2"
+              className="text-black  bg-[#FF578E] text-xs rounded-full px-4 py-2 flex items-center gap-2"
             >
               <Image alt="connectly" width={22} src={feed} />
               Feed
@@ -39,7 +39,7 @@ const Navbar = () => {
 
             <Link
               href={"/"}
-              className="bg-[#FFEDED] focus:text-white focus:bg-[#FF578E] rounded-full text-xs px-4 py-2 flex items-center gap-2"
+              className="bg-[#FFEDED] focus:text-black  focus:bg-[#FF578E] rounded-full text-xs px-4 py-2 flex items-center gap-2"
             >
               <Image alt="connectly" width={22} src={group} />
               Explore
@@ -47,7 +47,7 @@ const Navbar = () => {
 
             <Link
               href={"/"}
-              className="bg-[#FFEDED] focus:text-white focus:bg-[#FF578E] rounded-full text-xs px-4 py-2 flex items-center gap-2"
+              className="bg-[#FFEDED] focus:text-black  focus:bg-[#FF578E] rounded-full text-xs px-4 py-2 flex items-center gap-2"
             >
               <Image alt="connectly" width={22} src={vibe} />
               Vibes
@@ -55,7 +55,7 @@ const Navbar = () => {
 
             <Link
               href={"/"}
-              className="bg-[#FFEDED] focus:text-white focus:bg-[#FF578E] rounded-full text-xs px-4 py-2 flex items-center gap-2"
+              className="bg-[#FFEDED] focus:text-black  focus:bg-[#FF578E] rounded-full text-xs px-4 py-2 flex items-center gap-2"
             >
               <Image alt="connectly" width={22} src={pending} />
               Pending Requests

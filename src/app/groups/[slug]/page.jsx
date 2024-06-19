@@ -84,7 +84,7 @@ const Page = () => {
                   </h1>
                   <button
                     onClick={handleInviteFriendClick}
-                    className="px-3 py-2 bg-[#F45044] text-white flex items-center gap-1 rounded"
+                    className="px-3 py-2 bg-[#F45044] text-black  flex items-center gap-1 rounded"
                   >
                     <GoPlus size={22} /> Invite Friends
                   </button>
@@ -121,7 +121,7 @@ const Page = () => {
                         className="w-10 h-10"
                       />
                     </div>
-                    <div className="-translate-x-8 z-[6] bg-[#F45044] rounded-full w-10 h-10 flex items-center justify-center text-white">
+                    <div className="-translate-x-8 z-[6] bg-[#F45044] rounded-full w-10 h-10 flex items-center justify-center text-black ">
                       +2
                     </div>
                   </div>
@@ -276,7 +276,7 @@ const Page = () => {
                       <button className="border border-[#F45044] px-5 py-1 text-[#F45044] flex items-center rounded">
                         No
                       </button>
-                      <button className="bg-[#F45044] px-5 py-1 text-white flex items-center rounded">
+                      <button className="bg-[#F45044] px-5 py-1 text-black  flex items-center rounded">
                         Yes
                       </button>
                     </div>
@@ -298,7 +298,7 @@ const Page = () => {
                       <button className="border border-[#F45044] px-5 py-1 text-[#F45044] flex items-center rounded">
                         No
                       </button>
-                      <button className="bg-[#F45044] px-5 py-1 text-white flex items-center rounded">
+                      <button className="bg-[#F45044] px-5 py-1 text-black  flex items-center rounded">
                         Yes
                       </button>
                     </div>

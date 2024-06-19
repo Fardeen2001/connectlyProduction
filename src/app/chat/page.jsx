@@ -27,7 +27,9 @@ const Chat = () => {
             <FaVideo />
           </div>
         </div>
-        <div className="w-full h-[80vh] bg-primary"></div>
+        <center className="w-full mt-2 h-[80vh] bg-primary">
+          <h1>No Messages</h1>
+        </center>
         <form className="flex items-center w-full h-[10vh] gap-2 bg-primary p-2">
           <FaMicrophone className="text-2xl text-black " />
           <input
@@ -39,7 +41,7 @@ const Chat = () => {
           />
           <button
             type="submit"
-            className="bg-pink-500 hover:bg-pink-700 text-white font-medium text-xl flex items-center gap-1 py-2 px-4 rounded-full"
+            className="bg-pink-500 hover:bg-pink-700 text-black  font-medium text-xl flex items-center gap-1 py-2 px-4 rounded-full"
           >
             Send <IoMdSend />
           </button>

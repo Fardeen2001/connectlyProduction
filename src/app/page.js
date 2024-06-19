@@ -1,43 +1,21 @@
-"use client";
-import "./globals.css";
-import {
-  Post,
-  SideBar,
-  StoryCard,
-  CreatePost,
-  RightNav,
-  Footer,
-} from "../components";
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
-import Loading from "@/components/Loading";
+import Contact from "@/components/Contact";
+import Hero from "@/components/Hero";
+import Section1 from "@/components/Section1";
+import Section2 from "@/components/Section2";
+import Section3 from "@/components/Section3";
 
 export default function Home() {
-  const router = useRouter();
-  useEffect(() => {
-    router.replace("/feed");
-  }, []);
   return (
     <>
-      <Loading />
-      {/* <div className="grid-container relative">
-        <div className="p-5 flex items-center gap-5 story-card">
-          <StoryCard />
+      <main className="main">
+        <Hero />
+        <div className="px-5">
+          <Section1 />
+          <Section2 />
         </div>
-        <div className="sidebar-left">
-          <SideBar />
-        </div>
-        <div className="sidebar-right p-5">
-          <RightNav />
-        </div>
-        <div className="feed-section mx-auto">
-          <div className="flex items-center justify-center flex-col ">
-            <CreatePost />
-            <Post />
-          </div>
-        </div>
-      </div>
-      <Footer /> */}
+        <Section3 />
+        <Contact />
+      </main>
     </>
   );
 }

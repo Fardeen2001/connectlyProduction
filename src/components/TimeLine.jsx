@@ -392,7 +392,7 @@ const TimeLine = () => {
                 </div>
 
                 <div className="flex gap-5">
-                  <button className="bg-[#FF578E] rounded-md text-white px-4 py-2">
+                  <button className="bg-[#FF578E] rounded-md text-black  px-4 py-2">
                     Be Our Sponsor
                   </button>
                   <button className="border border-[#FF578E] px-4 py-2">
@@ -794,7 +794,7 @@ const TimeLine = () => {
                                         <p className='text-xs'>Department</p>
                                     </div>
 
-                                    <button className='bg-[#FF578E] rounded-md text-white px-4 py-2'>Vote Now</button>
+                                    <button className='bg-[#FF578E] rounded-md text-black  px-4 py-2'>Vote Now</button>
                                 </div>
 
                                 <p className='text-sm'>Lorem ipsum dolor sit amet consectetur. <br /> Molestie vulpUTate.</p>
@@ -813,7 +813,7 @@ const TimeLine = () => {
                                         <p className='text-xs'>Department</p>
                                     </div>
 
-                                    <button className='bg-[#FF578E] rounded-md text-white px-4 py-2'>Vote Now</button>
+                                    <button className='bg-[#FF578E] rounded-md text-black  px-4 py-2'>Vote Now</button>
                                 </div>
 
                                 <p className='text-sm'>Lorem ipsum dolor sit amet consectetur. <br /> Molestie vulpUTate.</p>
@@ -832,7 +832,7 @@ const TimeLine = () => {
                                         <p className='text-xs'>Department</p>
                                     </div>
 
-                                    <button className='bg-[#FF578E] rounded-md text-white px-4 py-2'>Vote Now</button>
+                                    <button className='bg-[#FF578E] rounded-md text-black  px-4 py-2'>Vote Now</button>
                                 </div>
 
                                 <p className='text-sm'>Lorem ipsum dolor sit amet consectetur. <br /> Molestie vulpUTate.</p>

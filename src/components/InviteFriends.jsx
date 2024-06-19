@@ -68,7 +68,7 @@ const InviteFriends = ({ setShowPopup }) => {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <button className="px-3 py-2 bg-[#F45044] text-white flex items-center gap-1 rounded">
+                  <button className="px-3 py-2 bg-[#F45044] text-black  flex items-center gap-1 rounded">
                     <GoPlus size={22} /> Add Friend
                   </button>
                 </div>
@@ -82,7 +82,7 @@ const InviteFriends = ({ setShowPopup }) => {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <button className="px-3 py-2 bg-[#F45044] text-white flex items-center gap-1 rounded">
+                  <button className="px-3 py-2 bg-[#F45044] text-black  flex items-center gap-1 rounded">
                     <GoPlus size={22} /> Add Friend
                   </button>
                 </div>
@@ -95,7 +95,7 @@ const InviteFriends = ({ setShowPopup }) => {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <button className="px-3 py-2 bg-[#F45044] text-white flex items-center gap-1 rounded">
+                  <button className="px-3 py-2 bg-[#F45044] text-black  flex items-center gap-1 rounded">
                     <GoPlus size={22} /> Add Friend
                   </button>
                 </div>
@@ -108,7 +108,7 @@ const InviteFriends = ({ setShowPopup }) => {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <button className="px-3 py-2 bg-[#F45044] text-white flex items-center gap-1 rounded">
+                  <button className="px-3 py-2 bg-[#F45044] text-black  flex items-center gap-1 rounded">
                     <GoPlus size={22} /> Add Friend
                   </button>
                 </div>

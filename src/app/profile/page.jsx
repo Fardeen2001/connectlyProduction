@@ -12,6 +12,8 @@ import Loading from "@/components/Loading";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useToast } from "@/components/ui/use-toast";
+import Link from "next/link";
+import { Edit } from "lucide-react";
 
 const Profile = () => {
   const [request, setRequest] = useState(false);
@@ -76,7 +78,10 @@ const Profile = () => {
               {console.log(profileData)}
               <Image
                 alt="connectly"
-                //src={profileData.profilePicture}
+                src={
+                  profileData?.profilePicture || "https://github.com/shadcn.png"
+                }
+                onError={""}
                 width={100}
                 height={50}
                 className="w-[10rem] h-[10rem] relative left-5 bottom-10 rounded-full"
@@ -106,6 +111,12 @@ const Profile = () => {
                       <p className="font-medium ">Followers</p>
                       <p className="font-medium ">57k</p>
                     </div>
+                    <Link
+                      href={"/editProfile"}
+                      className=" font-bold flex items-center gap-1"
+                    >
+                      <Edit /> edit
+                    </Link>
                   </div>
                 )}
               </div>

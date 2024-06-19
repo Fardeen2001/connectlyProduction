@@ -98,7 +98,7 @@ const Page = () => {
           </div>
 
           {/* Inside this submit button add some handleClick function */}
-          <button className="px-4 py-2 rounded-full text-white bg-[#FF578E] text-lg">
+          <button className="px-4 py-2 rounded-full text-black  bg-[#FF578E] text-lg">
             Submit
           </button>
         </div>
@@ -106,7 +106,7 @@ const Page = () => {
           {selectedInterests.map((interest) => (
             <div
               key={interest.name}
-              className="flex items-center flex-wrap rounded-full border-[1px] px-4 py-2 bg-[#FF578E] text-white"
+              className="flex items-center flex-wrap rounded-full border-[1px] px-4 py-2 bg-[#FF578E] text-black "
             >
               <p className="flex items-center gap-5">
                 {interest.icon}
@@ -129,8 +129,8 @@ const Page = () => {
               key={interest.name}
               className={`flex items-center justify-between rounded-full border-[1px] px-4 py-2 ${
                 selectedInterests.includes(interest)
-                  ? "bg-[#FF578E] text-white"
-                  : "hover:bg-[#FF578E] hover:text-white"
+                  ? "bg-[#FF578E] text-black "
+                  : "hover:bg-[#FF578E] hover:text-black "
               }`}
               onClick={() => handleSelectInterest(interest)}
             >

@@ -25,7 +25,7 @@ const StoryCard = () => {
         </div>
 
         <div className="bg-[#FF578E] w-10 h-10 flex items-center justify-center rounded-full absolute left-1/2 top-[65%] -translate-x-[50%] border-2">
-          <GoPlus className="text-white" size={30} />
+          <GoPlus className="text-black " size={30} />
         </div>
 
         <p className="absolute left-1/2 top-[88%] -translate-x-[50%] w-full text-center text-xs text-black ">

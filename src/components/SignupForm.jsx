@@ -66,7 +66,7 @@ const SignupForm = ({ setIsAnimated, isAnimated }) => {
   };
 
   return (
-    <div className="selection:bg-primary-500 selection:text-white">
+    <div className="selection:bg-primary-500 selection:text-black ">
       <div className="flex justify-center items-center">
         <div className="p-8 flex-1">
           <div className="mx-auto overflow-hidden">
@@ -75,7 +75,7 @@ const SignupForm = ({ setIsAnimated, isAnimated }) => {
                 Create account
               </h1>
               <Button
-                className="my-6  uppercase rounded-lg bg-[#F45044] hover:bg-[#ab180d] text-white font-semibold text-center flex items-center justify-center gap-2 w-full "
+                className="my-6  uppercase rounded-lg bg-[#F45044] hover:bg-[#ab180d] text-black  font-semibold text-center flex items-center justify-center gap-2 w-full "
                 onClick={() => googleSubmitHandler(toast)}
               >
                 <FaGoogle className="text-2xl" /> Sign In With Google
@@ -159,7 +159,7 @@ const SignupForm = ({ setIsAnimated, isAnimated }) => {
 
                 <Button
                   type="submit"
-                  className="mt-10 uppercase bg-[#F45044] hover:bg-[#ab180d] text-white font-semibold text-center  w-full"
+                  className="mt-10 uppercase bg-[#F45044] hover:bg-[#ab180d] text-black  font-semibold text-center  w-full"
                 >
                   Sign Up
                 </Button>

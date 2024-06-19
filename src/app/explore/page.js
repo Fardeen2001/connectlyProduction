@@ -53,7 +53,7 @@ const Page = () => {
 
   return (
     <>
-      <div className="grid-container relative">
+      <div className="grid-container relative text-black">
         {/* Image alt="connectly" */}
         <div className="px-5 py-5 flex items-center gap-5 story-card relative">
           <Image
@@ -63,8 +63,8 @@ const Page = () => {
           />
           <div className="absolute left-1/2 -translate-x-[50%] flex flex-col items-center justify-center gap-3 w-[47rem] h-[11.2rem] rounded-2xl">
             <Image alt="connectly" src={Pic} className=" w-20 h-20" />
-            <div className="flex items-center gap-2 text-white">
-              <p className="text-lg text-white font-medium">Kolkata</p>
+            <div className="flex items-center gap-2 text-black">
+              <p className="text-lg text-black font-medium">Kolkata</p>
               <MdEdit size={22} />
             </div>
           </div>
@@ -169,7 +169,7 @@ const Page = () => {
             </div>
 
             {/* Profiles */}
-            <div className="py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="py-10 mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {filteredProfiles.map((profile, index) => {
                 return <Card key={index} profile={profile} />;
               })}

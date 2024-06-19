@@ -8,6 +8,8 @@ import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
 import { googleSubmitHandler } from "@/utils/GoogleAuthHandler";
 import { useToast } from "./ui/use-toast";
+import { useDispatch } from "react-redux";
+import { authReducer } from "@/redux/reducers/auth";
 
 const LoginForm = ({ setIsAnimated, isAnimated }) => {
   const [emailValue, setEmailValue] = useState("");
@@ -15,6 +17,7 @@ const LoginForm = ({ setIsAnimated, isAnimated }) => {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
   const { toast } = useToast();
+  const dispatch = useDispatch();
   const submitHandler = async (e) => {
     setLoading(true);
     e.preventDefault();
@@ -35,7 +38,15 @@ const LoginForm = ({ setIsAnimated, isAnimated }) => {
       });
 
       const responseData = await response.json();
-
+      dispatch(
+        authReducer({
+          id: responseData?.id,
+          name: responseData?.name,
+          email: responseData?.email,
+          profilePicture: responseData?.profileImage,
+          token: responseData?.token,
+        })
+      );
       if (responseData.token) {
         Cookies.set("token", responseData.token, {
           expires: 29,
@@ -55,7 +66,7 @@ const LoginForm = ({ setIsAnimated, isAnimated }) => {
   };
 
   return (
-    <div className="selection:bg-[#F45044] selection:text-white">
+    <div className="selection:bg-[#F45044] selection:text-black ">
       <div className="flex justify-center items-center">
         <div className="p-8 flex-1">
           <div className="mx-auto overflow-hidden">
@@ -64,7 +75,7 @@ const LoginForm = ({ setIsAnimated, isAnimated }) => {
                 Welcome back!
               </h1>
               <Button
-                className="my-6 p-4 uppercase rounded-lg bg-[#F45044] hover:bg-[#ab180d] text-white font-semibold text-center flex items-center justify-center gap-2 w-full focus:outline-none focus:ring focus:ring-offset-2 focus:ring-[#F45044] focus:ring-opacity-80 cursor-pointer"
+                className="my-6 p-4 uppercase rounded-lg bg-[#F45044] hover:bg-[#ab180d] text-black  font-semibold text-center flex items-center justify-center gap-2 w-full focus:outline-none focus:ring focus:ring-offset-2 focus:ring-[#F45044] focus:ring-opacity-80 cursor-pointer"
                 onClick={() => googleSubmitHandler(toast)}
               >
                 <FaGoogle className="text-2xl" /> Sign In With Google
@@ -112,7 +123,7 @@ const LoginForm = ({ setIsAnimated, isAnimated }) => {
 
                 <Button
                   type="submit"
-                  className="mt-10 uppercase font-semibold text-center w-full bg-[#F45044] hover:bg-[#ab180d] text-white "
+                  className="mt-10 uppercase font-semibold text-center w-full bg-[#F45044] hover:bg-[#ab180d] text-black  "
                 >
                   {loading ? "Signing You In..." : "Sign In"}
                 </Button>

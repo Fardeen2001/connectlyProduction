@@ -1,11 +1,17 @@
 "use client";
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const ChatSideBar = () => {
   const [activeTab, setActiveTab] = useState("primary");
   return (
-    <div className="w-[20vw] md:w-[30vw] h-screen bg-primary-600 rounded-lg md:flex flex-col  items-center p-4">
+    <div className="hidden md:w-[30vw] h-screen bg-primary rounded-lg md:flex flex-col  items-center p-4">
       <div className="border-b w-full">
+        <Link href={"/feed"} className="flex items-center gap-1">
+          <ArrowLeft />
+          Back
+        </Link>
         <h1 className="font-bold text-xl">CONNECTLY</h1>
       </div>
       <div className="flex items-center gap-4 w-full justify-center py-5">

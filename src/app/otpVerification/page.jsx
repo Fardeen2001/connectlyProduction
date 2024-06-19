@@ -4,8 +4,9 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import axios from "axios";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Cookies from "js-cookie";
+import { authReducer } from "@/redux/reducers/auth";
 
 const OtpVerification = () => {
   const [otp1, setOtp1] = useState();
@@ -17,6 +18,8 @@ const OtpVerification = () => {
   const userEmail = useSelector((state) => state.auth.email);
   //console.log(userEmail);
   const router = useRouter();
+  const dispatch = useDispatch();
+
   const submitHandler = async (e) => {
     e.preventDefault();
     const apiURL = process.env.NEXT_PUBLIC_API_URL;
@@ -35,6 +38,11 @@ const OtpVerification = () => {
         //alert(response.data.message);
         console.log(response);
         // Redirect to OTP page
+        dispatch(
+          authReducer({
+            token: response?.data?.token,
+          })
+        );
 
         Cookies.set("token", response.data.token);
         //create user profile

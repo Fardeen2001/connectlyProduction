@@ -44,7 +44,7 @@ const Party = () => {
       <div className="flex flex-col gap-2">
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-semibold">Group Events</h1>
-          <button className="px-3 py-2 bg-[#F45044] text-white flex items-center gap-1 rounded">
+          <button className="px-3 py-2 bg-[#F45044] text-black  flex items-center gap-1 rounded">
             <GoPlus size={22} /> Create Events
           </button>
         </div>
@@ -132,7 +132,7 @@ const Party = () => {
                     >
                       Book Me In
                     </Link>
-                    <button className="bg-[#F45044] rounded text-white px-8 py-2">
+                    <button className="bg-[#F45044] rounded text-black  px-8 py-2">
                       Be Our Host
                     </button>
                   </div>

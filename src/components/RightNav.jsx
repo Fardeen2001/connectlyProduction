@@ -29,7 +29,7 @@ const RightNav = () => {
               <div>
                 <Link
                   href={"/profile"}
-                  className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
+                  className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-black  hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
                 >
                   <AvatarComponent
                     imgSrc={"https://github.com/shadcn.png"}
@@ -41,7 +41,7 @@ const RightNav = () => {
 
               <Link
                 href={"/feed"}
-                className="font-medium py-2 px-2 hover:bg-[#F45044] hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
+                className="font-medium py-2 px-2 hover:bg-[#F45044] hover:text-black  hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
               >
                 <Image
                   alt="connectly"
@@ -53,27 +53,27 @@ const RightNav = () => {
 
               <Link
                 href={"/explore"}
-                className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
+                className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-black  hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
               >
                 <MdOutlineExplore size={22} /> Explore
               </Link>
 
               <Link
                 href={"/chat"}
-                className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
+                className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-black  hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
               >
                 <IoChatbubbleEllipsesOutline size={22} /> Chat
               </Link>
 
               <Link
                 href={"/notification"}
-                className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
+                className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-black  hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
               >
                 <IoNotificationsOutline size={22} /> Notification
               </Link>
               <Link
                 href={"/auth"}
-                className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
+                className="font-medium text-gray-700 py-2 px-2 hover:bg-[#F45044] hover:text-black  hover:text-base rounded-md transition duration-150 ease-in-out hover:no-underline flex items-center gap-2"
               >
                 <User size={22} /> Sign Up
               </Link>

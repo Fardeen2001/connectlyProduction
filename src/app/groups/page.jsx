@@ -77,7 +77,7 @@ const Page = () => {
               <h1 className="text-2xl font-semibold">Groups</h1>
               <button
                 onClick={handleCreateGroupClick}
-                className="px-3 py-2 bg-[#F45044] text-white flex items-center gap-1 rounded"
+                className="px-3 py-2 bg-[#F45044] text-black  flex items-center gap-1 rounded"
               >
                 <GoPlus size={22} /> Create Group
               </button>
@@ -178,14 +178,14 @@ const Page = () => {
                             className="w-10 h-10"
                           />
                         </div>
-                        <div className="-translate-x-8 z-[6] bg-[#F45044] rounded-full w-10 h-10 flex items-center justify-center text-white">
+                        <div className="-translate-x-8 z-[6] bg-[#F45044] rounded-full w-10 h-10 flex items-center justify-center text-black ">
                           +2
                         </div>
                       </div>
 
                       <Link
                         href={`/groups/${g.id}`}
-                        className="w-full bg-[#F45044] text-white py-2 mb-4 rounded-md flex items-center justify-center"
+                        className="w-full bg-[#F45044] text-black  py-2 mb-4 rounded-md flex items-center justify-center"
                       >
                         View details
                       </Link>

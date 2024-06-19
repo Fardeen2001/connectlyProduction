@@ -212,7 +212,7 @@ const CreatePost = () => {
 
                 <button
                   type="submit"
-                  className="mt-4 bg-[#F45044] text-white px-4 py-2 rounded w-full"
+                  className="mt-4 bg-[#F45044] text-black  px-4 py-2 rounded w-full"
                 >
                   {loading ? "Posting.." : "Post"}
                 </button>
